@@ -36,8 +36,8 @@
 }
 
 .project_description{
-    padding-right: 5%;
-    width: 45%;
+    padding-right: 3%;
+    width: 50%;
     display:inline-block;   
     vertical-align:top;
 }
@@ -47,4 +47,40 @@
     font-size: 18px;
     padding-top:20px;
     padding-bottom:0px;
+}
+
+body{
+    margin:80px
+}
+
+ul{
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .project_description{
+        width: 90%;
+        text-align: left;
+        padding-right: 0;
+        margin-left:5%;
+    }
+    body{
+        margin:40px;
+    }
+}
+
+@media only screen and (min-width: 2160px) {
+    .project_description{
+        width: 1060px;
+    }
+    body{
+        margin:100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .wide_img{
+        width:100%;
+        height:auto;
+    }
 }

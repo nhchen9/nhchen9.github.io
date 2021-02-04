@@ -9,93 +9,94 @@
 </head>
 
 <body>
-  <div class="intro">
-  <p>Hi, my name is <b>Nicholas Chen</b>.  
-    I'm an aspiring researcher in secure machine learning, currently an undergraduate at the University of Illinois.  
+  <section id="index_wrapper">
+    <div class="intro">
+    <p>Hi, my name is <b>Nicholas Chen</b>.  
+      I'm an aspiring researcher in secure machine learning, currently an undergraduate at the University of Illinois.  
+      <br>
+      My main interests are artificial intelligence, finance, and security.
+      I'm currently applying for graduate programs and generally open to interesting work!
+      
+    </p>
+    </div>
+
+
+    <div class="section_title"> Personal Info </div>
+    <div>nc7@illinois.edu</div>
+    <a href="resources/grad_resume.pdf" class="doc" id="resume_link"> Resume </a>
     <br>
-    My main interests are artificial intelligence, finance, and security.
-    I'm currently applying for graduate programs and generally open to interesting work!
-    
-  </p>
-  </div>
+    <a href="resources/personal_statement.pdf" class="doc" id="sop_link">Personal Statement</a>
 
+    <p> <div class="section_title">Some Projects</div>
+      <ul>
+        <li class="project_item">
+          <div class = "project_container">
+            
+            <div class = "project_description">
+              <div class = "project_title">
+                Safer Illinois Virtual COVID-19 Status Cards
+              </div>
+              <p>
+                Powerful analytics tools frequently require the collection of sensitive user information, 
+                introducing a delicately balanced trade-off  between  data  driven  functionality  and  personal  privacy.  
+                As  more  user  information  is  disclosed,  applications can provide more accurate, responsive, and personalized experiences;  
+                yet  the  privacy  risk  increases  accordingly.
 
-  <div class="section_title"> Personal Info </div>
-  <div>nc7@illinois.edu</div>
-  <a href="resources/grad_resume.pdf" class="doc" id="resume_link"> Resume </a>
-  <br>
-  <a href="resources/personal_statement.pdf" class="doc" id="sop_link">Personal Statement</a>
+                <br>
+                <br>
 
-  <p> <div class="section_title">Some Projects</div>
-    <ul>
-      <li class="project_item">
-        <div class = "project_container">
-          
-          <div class = "project_description">
-            <div class = "project_title">
-              Safer Illinois Virtual COVID-19 Status Cards
-            </div>
-            <p>
-              Powerful analytics tools frequently require the collection of sensitive user information, 
-              introducing a delicately balanced trade-off  between  data  driven  functionality  and  personal  privacy.  
-              As  more  user  information  is  disclosed,  applications can provide more accurate, responsive, and personalized experiences;  
-              yet  the  privacy  risk  increases  accordingly.
+                My team is currently investigating how best to bridge this divide with trusted execution environments.
+                We are currently developing a COVID-19 risk status computation system leveraging hardware/software enclaves to uphold 
+                strong privacy and security guarantees for user medical data.
+              </p>
 
-              <br>
-              <br>
-
-              My team is currently investigating how best to bridge this divide with trusted execution environments.
-              We are currently developing a COVID-19 risk status computation system leveraging hardware/software enclaves to uphold 
-              strong privacy and security guarantees for user medical data.
-            </p>
-
-            <a href = "https://arxiv.org/abs/2101.07897"> <b>[Paper]</b> Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19</a>
-          </div> 
-          <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="350px" class = "project_image">
-        </div>
-      </li>
-
-      <hr>
-
-      <li class="project_item">
-        <div class = "project_container">
-          
-          <div class = "project_description">            
-            <div class = "project_title">
-              Algorithmic Trading with DNN Price Prediction
-            </div>
-            <p>
-              An end-to-end high frequency trading system including low latency market data streaming, ML price
-              prediction, order execution, and historical back testing system.  I currently trade 30 million dollars of volume daily.
-            </p>
+              <a href = "https://arxiv.org/abs/2101.07897"> <b>[Paper]</b> Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19</a>
+            </div> 
+            <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="350px" class = "project_image">
           </div>
-          <br>
-          <img src="resources/sigma3graphic.JPG" height = "350px">
-          <img src="resources/performance.JPG" height = "500px">
-        </div>
-      </li>
+        </li>
 
-      <hr>
+        <hr>
 
-      <li class="project_item">
-        <div class = "project_container">
-          <div class = "project_description">            
-            <div class = "project_title">
-              Flexible Deep Image Compression and Enhancement
+        <li class="project_item">
+          <div class = "project_container">
+            
+            <div class = "project_description">            
+              <div class = "project_title">
+                Algorithmic Trading with DNN Price Prediction
+              </div>
+              <p>
+                An end-to-end high frequency trading system including low latency market data streaming, ML price
+                prediction, order execution, and historical back testing system.  I currently trade 30 million dollars of volume daily.
+              </p>
             </div>
-            <p>
-              Combining deep learning based image compression and super resolution to yield extreme compression ratios
-              while retaining superior image quality.
-            </p>
+            <br>
+            <img src="resources/sigma3graphic.JPG" height = "350px" id = "trade_arch" class = "wide_img">
+            <img src="resources/performance.JPG" height = "500px">
           </div>
-          <br>
-          <img src="resources/sr_visual.JPG" height="350px">
-        </div>
-      </li>
+        </li>
 
-    </ul>
-  </p>
+        <hr>
 
+        <li class="project_item">
+          <div class = "project_container">
+            <div class = "project_description">            
+              <div class = "project_title">
+                Flexible Deep Image Compression and Enhancement
+              </div>
+              <p>
+                Combining deep learning based image compression and super resolution to yield extreme compression ratios
+                while retaining superior image quality.
+              </p>
+            </div>
+            <br>
+            <img src="resources/sr_visual.JPG" height="350px" id = "sr_arch" class = "wide_img">
+          </div>
+        </li>
+
+      </ul>
+    </p>
+  </section>
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="index.js"></script>
 </body>
