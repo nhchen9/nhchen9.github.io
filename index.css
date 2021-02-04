@@ -5,6 +5,11 @@
     font-size:"14px"
 }
 
+.intro{
+    margin-top: 30px;
+    display: block;
+}
+
 .doc{
     font-weight: bold;
 }
@@ -41,5 +46,5 @@
     font-weight: bold;
     font-size: 18px;
     padding-top:20px;
-    padding-bottom:20px;
+    padding-bottom:0px;
 }
