@@ -1,1 +1,45 @@
 /* Insert your global CSS here. */
+
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:"14px"
+}
+
+.doc{
+    font-weight: bold;
+}
+
+.project_item{
+    list-style: none;
+}
+
+.project_container{
+    /*width: 80%;*/
+    padding-bottom: 25px;
+    padding-top:25px;
+}
+
+.project_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    size: 16px;
+}
+
+.project_image{
+    /*float:left;*/
+}
+
+.project_description{
+    padding-right: 5%;
+    width: 45%;
+    display:inline-block;   
+    vertical-align:top;
+}
+
+.section_title{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
