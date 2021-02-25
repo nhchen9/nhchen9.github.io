@@ -1,0 +1,20 @@
+<div class="Concepts"> 
+    <ul>
+      <li>
+        Central Limit Theorem - a large enough sample size of data converges to the true distribution.  we can learn and extrapolate from finite experience to reason about future, unknown events.
+      </li>
+      <li>
+        Bayes Theorem/MAP - Updating prior beliefs based on new evidence
+      </li>
+      <li>
+        Efficient Market Hypothesis - The smartest experts in the world obtain approximately optimal solutions which represent an accumulation of contemporary human knowledge; to beat them you either need to get lucky or have inside info.
+        More generally, all decision making is an inevitable prediction game of its own.  Disagreeing with the crowd probably means you're wrong, but occasionally it you've discovered something new and valuable.
+      </li>
+      <li>
+        Free Will - Moral beliefs can be reduced down to "because I want it to be so".  People are simply optimizing for utility based on their own values.  
+        With enough backpropagation, these values are instilled by forces outside of our control - our parents, friends, teachers, media, and socialization.  
+        While we are physically capable of executing any action imaginable, we end up selecting just one.  Is the selection process really our own?
+      </li>
+    </ul>
+
+  </div>
