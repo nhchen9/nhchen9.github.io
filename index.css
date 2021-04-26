@@ -36,7 +36,7 @@
 
 .intro_description{
     padding-left: 3%;
-    width: 50%;
+    width: 45%;
     display:inline-block;   
     vertical-align:top;
 }
@@ -72,7 +72,7 @@ ul{
 }
 
 @media only screen and (max-width: 1050px) {
-    .project_description{
+    .project_description, .intro_description {
         width: 90%;
         text-align: left;
         padding-right: 0;
