@@ -6,7 +6,7 @@
 }
 
 .intro{
-    display: block;
+    display: inline-block;
 }
 
 .doc{
@@ -32,6 +32,13 @@
 
 .project_image{
     /*float:left;*/
+}
+
+.intro_description{
+    padding-left: 3%;
+    width: 50%;
+    display:inline-block;   
+    vertical-align:top;
 }
 
 .project_description{
