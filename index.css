@@ -72,7 +72,7 @@ ul{
 }
 
 @media only screen and (max-width: 1050px) {
-    .project_description, .intro_description {
+    .project_description{
         width: 90%;
         text-align: left;
         padding-right: 0;

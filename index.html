@@ -70,7 +70,7 @@
               Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19
               
             </div> 
-            <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="350px" class = "project_image">
+            <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="330px" class = "project_image">
           </div>
         </li>
 
@@ -100,17 +100,29 @@
           <div class = "project_container">
             <div class = "project_description">            
               <div class = "project_title">
-                Flexible Deep Image Compression and Enhancement
+                Super-Resolution Augmented Image Compression
               </div>
               <p>
-                Combining deep learning based image compression and super resolution to yield extreme compression ratios
-                while retaining superior image quality.
+                Image compression is ubiquitously applied in data storage and communication applications, where both file size and perceptual quality are imperative.
+                To this end, prior works on learned compression have made tremendous progress in recent years.
+                However, current deep learning-based image compression algorithms incur significant server-side compute cost, necessitating expensive inference for each pre-computed image and resolution pair, limiting practical usability at scale.
 
-                Early results indicate that deep compression and image super resolution synergize better than would be expected by random chance.  Ongoing work to improve state of the art image fidelity and computational performance.
+                <br>
+                <br>
+
+                To this end, instead of directly compressing the original image, our approach compresses an initially downscaled image, then flexibly resizes and enhances the image after transmission.
+                By doing so, we achieve two significant, fundamental benefits over existing methods.
+                First, an n&times; downsample operation results in n<sup>2</sup>&times; fewer pixels stored, thereby dramatically reducing storage and computational burden per image compression for the service provider.
+                Second, super-resolution allows a recipient to flexibly resize an image to their device resolution, meaning that a service provider can compress and store only one image resolution server-side while still delivering any desired output image resolution to clients.
+
+                Our results demonstrate 6.5&times; increased compression throughput, 60% reduced file storage size, and 19% higher perceptual image quality than current state-of-the-art algorithms at comparable bitrates.
+                <br>
+                <br>
+                Paper under review at NeurIPS 2021, pre-print coming soon.
               </p>
             </div>
             <br>
-            <img src="resources/sr_visual.JPG" height="350px" id = "sr_arch" class = "wide_img">
+            <img src="resources/compressr_design_proposed.JPG" height="350px" id = "sr_arch" class = "wide_img">
           </div>
         </li>
 
