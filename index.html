@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>D3 starter template</title>
-  <meta name="description" content="D3 starter template">
-  <meta name="author" content="">
+  <title>Nicholas Chen's personal website</title>
+  <meta name="description" content="Nicholas Chen's personal website">
+  <meta name="author" content="Nicholas Chen">
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
   <section id="index_wrapper">
-    <div class="intro">
-    <p>Hi, my name is <b>Nicholas Chen</b>.  
-      I'm an aspiring researcher in secure machine learning, currently an undergraduate at the University of Illinois.  
-      <br>
-      My main interests are artificial intelligence, finance, and security.
-      I am applying for graduate programs and generally open to interesting work!
+
+    <div class = "project_container">
+      <img src="resources/me.png" alt="Me and Fang" width='600px' class = "project_image">
+
+      <div class = "intro_description">            
+        Hi, my name is <b>Nicholas Chen</b>.  
+        I'm an aspiring researcher in secure machine learning, currently an undergraduate at the University of Illinois.  
+        My main interest is applying artificial intelligence to healthcare and finance.  
+        I hope to develop robust, explainable, and privacy-preserving models that reliably solve important problems facing humanity. 
+        I'm currently applying for graduate programs and generally open to interesting work!
+        </p>
+        <div class="section_title"> Personal Info </div>
+        <div>nc7@illinois.edu</div>
+        <a href="resources/grad_resume.pdf" class="doc" id="resume_link"> Resume/CV </a>
+        <br>
+        <a href="resources/personal_statement.pdf" class="doc" id="sop_link">Personal Statement</a>
+      </div>
       
-    </p>
     </div>
 
+    <br>
+    
+  
 
-  <div class="section_title"> Personal Info </div>
-  <div>nc7@illinois.edu</div>
-  <a href="resources/grad_resume.pdf" class="doc" id="resume_link"> Resume/CV </a>
-  <br>
-  <a href="resources/personal_statement.pdf" class="doc" id="sop_link">Personal Statement</a>
-
-    <p> <div class="section_title">Some Projects</div>
+    <p> <div class="section_title">Current Projects</div>
       <ul>
         <li class="project_item">
           <div class = "project_container">
@@ -45,14 +52,25 @@
                 <br>
                 <br>
 
-                My team is currently investigating how best to bridge this divide with trusted execution environments.
-                We are currently developing a COVID-19 risk status computation system leveraging hardware/software enclaves to uphold 
-                strong privacy and security guarantees for user medical data.
+                My team is developing two secure, privacy-preserving computing systems to bridge this divide and facilitate safe reopening at the University of Illinois: Safer Illinois and RokWall.
+                Safer Illinois, a decentralized app for bluetooth contact tracing and COVID-19 risk passports, has been deployed on campus since in August 2020 and has measured 50,000 unique users. 
+                RokWall is an architecture built on secure hardware/software enclaves to support centralized analytics imperative for guiding public policy decisions.
+
+                <br>
+                <br>
+
+                I am currently leading development of a COVID-19 Status Card application leveraging AWS Nitro enclaves.
+                This project is particularly exciting because of its immediate practical value for the safe reopening of the UIUC campus community.
+                More generally, I believe it suggests a generalizable framework for trustworthy, transparent, and scalable centralized computation which is not otherwise satisfied by pure hardware approaches.
+
               </p>
 
-              <a href = "https://arxiv.org/abs/2101.07897"> <b>[Paper]</b> Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19</a>
+              <a href = "https://arxiv.org/abs/2101.07897" target="_blank"> <b>[Paper]</b> </a>
+              <a href = "https://www.youtube.com/watch?v=pZOvRl6Yu2U" target="_blank"> <b>[Presentation] </b></a>
+              Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19
+              
             </div> 
-            <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="350px" class = "project_image">
+            <img src="resources/vsc_graphic.JPG" alt="VSC Graphic" height="330px" class = "project_image">
           </div>
         </li>
 
@@ -82,15 +100,29 @@
           <div class = "project_container">
             <div class = "project_description">            
               <div class = "project_title">
-                Flexible Deep Image Compression and Enhancement
+                Super-Resolution Augmented Image Compression
               </div>
               <p>
-                Combining deep learning based image compression and super resolution to yield extreme compression ratios
-                while retaining superior image quality.
+                Image compression is ubiquitously applied in data storage and communication applications, where both file size and perceptual quality are imperative.
+                To this end, prior works on learned compression have made tremendous progress in recent years.
+                However, current deep learning-based image compression algorithms incur significant server-side compute cost, necessitating expensive inference for each pre-computed image and resolution pair, limiting practical usability at scale.
+
+                <br>
+                <br>
+
+                To this end, instead of directly compressing the original image, our approach compresses an initially downscaled image, then flexibly resizes and enhances the image after transmission.
+                By doing so, we achieve two significant, fundamental benefits over existing methods.
+                First, an n&times; downsample operation results in n<sup>2</sup>&times; fewer pixels stored, thereby dramatically reducing storage and computational burden per image compression for the service provider.
+                Second, super-resolution allows a recipient to flexibly resize an image to their device resolution, meaning that a service provider can compress and store only one image resolution server-side while still delivering any desired output image resolution to clients.
+
+                Our results demonstrate 6.5&times; increased compression throughput, 60% reduced file storage size, and 19% higher perceptual image quality than current state-of-the-art algorithms at comparable bitrates.
+                <br>
+                <br>
+                Paper under review at NeurIPS 2021, pre-print coming soon.
               </p>
             </div>
             <br>
-            <img src="resources/sr_visual.JPG" height="350px" id = "sr_arch" class = "wide_img">
+            <img src="resources/compressr_design_proposed.JPG" height="350px" id = "sr_arch" class = "wide_img">
           </div>
         </li>
 
@@ -99,5 +131,7 @@
   </section>
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="index.js"></script>
+
+
 </body>
 </html>
